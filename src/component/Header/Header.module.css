@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  height: 2rem;
+  background: linear-gradient(90deg, #6fa9d8 0%, #81a9ca 18%, #fcfcfc 100%);
+  color: #fff;
+}
+header a {
+  color: #000;
+  font-size: 25px;
+  text-decoration: none;
+}
+header a:hover {
+  color: #808080;
+}

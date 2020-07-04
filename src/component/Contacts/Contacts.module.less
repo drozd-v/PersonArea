@@ -1,0 +1,85 @@
+@color_black: #000;
+@color_write: #fff;
+
+.changeFields {
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0, 0.2), rgba(0, 0, 0, 0.5)), url(../../assets/images/more.jpg);
+    height: calc(100vh - 2rem - 20px);
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    &Fieldset{
+        text-align: center;
+        width: 500px;
+        background-color: rgba(0,0,0, 0.2);
+        & legend {
+            font-size: 30px;
+        }
+    }
+    &Input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+        &Item {
+            &Error {
+                color: red;
+            }
+            & input{
+                background-color: transparent;
+                margin-right: 25px;
+                border: none;
+                border-bottom: 2px solid @color_black;
+                color: @color_write;
+                font-size: 15px;
+                &::placeholder{
+                    color: @color_write;
+                }
+                & input:last-child {
+                    margin-right: 0;
+                }
+                &:focus {
+                    outline: none;
+                }
+             }
+        }
+    }
+    & button {
+        background-color: @color_black;
+        margin: 10px;
+        color: @color_write;
+        font-size: 15px;
+        border: none;
+        border-radius: 10px;
+        width: 80px;
+        height: 25px;
+        &:hover {
+            background-color: transparent;
+            color: @color_black;
+            border: 1px solid @color_black;
+        }
+        &:active, &:focus {
+            background-color: @color_black;
+            color: @color_write;
+            border: none;
+            outline: none;
+        }
+    }
+}
+
+.searchField {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    & input {
+        background-color: transparent;
+        border: 1px solid @color_write;
+        width: 250px;
+        margin-right: 15px;
+        border-radius: 10px;
+        padding: 5px;
+        &:active, &:focus {
+            outline: none;
+        }
+    }
+}

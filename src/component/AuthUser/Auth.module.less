@@ -1,0 +1,73 @@
+@color_black: #000;
+@color_write: #fff;
+
+.auth {
+    height: 600px;
+    background-image: url(../../assets/images/more.jpg);
+    background-repeat: no-repeat;
+    height: calc(100vh - 2rem - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &Fieldset{
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.1);
+        & legend {
+            text-align: center;
+            font-size: 30px;
+        }
+    }
+    &Input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 275px;
+        &Error {
+            font-size: 20px;
+            color: red;
+            padding: 5px;
+            font-weight: 600;
+        }
+        & input {
+        background-color: transparent;
+        margin-bottom: 25px;
+        border: none;
+        border-bottom: 2px solid @color_black;
+        color: @color_write;
+        font-size: 15px;
+        &::placeholder{
+            color: @color_write;
+        }  
+        &:focus {
+            outline: none;
+        }
+        }
+        & button {
+            background-color: @color_black;
+            color: @color_write;
+            font-size: 15px;
+            border: none;
+            border-radius: 10px;
+            width: 80px;
+            height: 25px;
+            &:hover {
+                background-color: transparent;
+                color: @color_black;
+                border: 1px solid @color_black;
+            }
+            &:active, &:focus {
+                background-color: @color_black;
+                color: @color_write;
+                border: none;
+                outline: none;
+            }
+        
+        }
+    }
+}
+
+
+
+
+

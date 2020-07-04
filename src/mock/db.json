@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "admin",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "name": "student",
+      "password": "student"
+    },
+    {
+      "id": 3,
+      "name": "student1",
+      "password": "student1"
+    }
+  ],
+  "contacts": [
+    {
+      "name": "User1",
+      "tel": "80009998877",
+      "mail": "user1@m.cum",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "name": "User2",
+      "tel": "80009994433",
+      "mail": "user2@m.cum"
+    },
+    {
+      "userId": 2,
+      "id": 1,
+      "name": "User1",
+      "tel": "80009998877",
+      "mail": "user1@m.cum"
+    },
+    {
+      "userId": 2,
+      "id": 2,
+      "name": "User2",
+      "tel": "80009994433",
+      "mail": "user2@m.cum"
+    },
+    {
+      "userId": 3,
+      "id": 1,
+      "name": "User1",
+      "tel": "80009998877",
+      "mail": "user1@m.cum"
+    },
+    {
+      "userId": 3,
+      "id": 2,
+      "name": "User2",
+      "tel": "80009994433",
+      "mail": "user2@m.cum"
+    },
+    {
+      "name": "Elena",
+      "tel": "+7(859)689-76-56",
+      "mail": "Elena@mail.ru",
+      "userId": "1",
+      "id": 3
+    }
+  ]
+}

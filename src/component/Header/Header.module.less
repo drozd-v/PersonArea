@@ -1,0 +1,21 @@
+@color_write: #fff;
+@color_black: #000;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    height: 2rem;
+    background: linear-gradient(90deg, rgb(111, 169, 216) 0%, rgb(129, 169, 202) 18%, rgb(252, 252, 252) 100%);
+    color: @color_write;
+    & a {
+        color: @color_black;
+        font-size: 25px;
+        text-decoration: none;
+        &:hover {
+            color: lighten(@color_black, 50%); 
+        }
+    }
+}
+

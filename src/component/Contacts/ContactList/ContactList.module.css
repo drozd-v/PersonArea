@@ -1,0 +1,21 @@
+.useGrid {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.contactListTable {
+  font-size: 20px;
+  grid-template-columns: 300px repeat(3, 150px);
+  display: grid;
+  justify-items: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.contactList {
+  grid-template-columns: 150px 150px repeat(3, 150px);
+  display: grid;
+  justify-items: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
